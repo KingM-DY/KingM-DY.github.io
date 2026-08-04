@@ -1,7 +1,5 @@
 # KingM 个人主页
 
-金铭（King M）的个人介绍网站，集中展示技术开发、产品设计与创意视觉三个方向的作品与能力。
-
 ## 在线访问
 
 - GitHub Pages：`https://kingm-dy.github.io/`
@@ -45,23 +43,3 @@ KingM-DY.github.io/
   - 水果商城：`https://github.com/KingM-DY/fruitshop`
   - 个人主页：`#`
 
-## 如何更新内容
-
-### 方式一：从源码重新构建（推荐）
-
-修改 `kingm-site` 源码项目后构建，将 `dist/` 内容覆盖到本仓库的 `kingm-site-dist/`：
-
-```bash
-# 在 kingm-site 源码项目中
-npm install
-npm run build
-# 将生成的 dist/ 拷到本仓库的 kingm-site-dist/ 并提交
-```
-
-### 方式二：直接修改构建产物
-
-对于简单的文案 / 链接改动，可直接编辑 `kingm-site-dist/assets/index-*.js` 中的对应字符串（该文件无 SRI 校验，修改后文件名 hash 不一致不影响加载）。修改后提交即可。
-
-## 部署
-
-推送到本仓库的默认分支后，GitHub Pages 会自动发布，无需额外操作。
